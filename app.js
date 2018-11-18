@@ -1,23 +1,16 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom'
 
-
-// Define a statuful components
 class Todos extends Component {
-
-    // the constructor is used to set the initial state
     constructor() {
         super();
 
-        // define the intial state
         this.state = {
             articles: [],
             inputValue: 'hello '
         };
     }
 
-
-    // when the user is writing to the input text, update the inputValue key in the state
     oninputchange(event) {
         this.setState({
             inputValue: event.target.value
@@ -59,22 +52,16 @@ class Todos extends Component {
                                     <img width="13" height="13"/>
                                 </div>
                             </article>
-
                         )
                     })
                 }
-
             </div>
         );
     }
 }
-
-// Define a statless components
 function App() {
     return (
         <Todos/>
     )
 }
-
-// Display content
 ReactDOM.render(<App/>, document.getElementById('root'))

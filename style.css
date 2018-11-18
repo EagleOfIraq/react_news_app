@@ -1,10 +1,10 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
-    padding: 0px 10%;
+    padding: 0 10%;
 }
 
 input[type="text"] {
@@ -23,7 +23,7 @@ main {
 article {
     position: relative;
     display: flex;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0 20px 0;
     background-color: #fff;
     padding: 14px;
     border: 1px solid #E5E9F2;
